@@ -5,7 +5,7 @@ public class EnumType {
 
     public enum Pay {
         PAY_FIRST_PARK_LATER,
-        PAY_LATER_PARK_FIRST;
+        PAY_LATER_PARK_FIRST
     }
 
     public enum ParkStatus{
