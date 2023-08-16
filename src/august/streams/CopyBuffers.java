@@ -1,4 +1,4 @@
-package august.fileHandling;
+package august.streams;
 
 import java.io.*;
 

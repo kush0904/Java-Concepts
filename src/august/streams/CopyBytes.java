@@ -1,18 +1,21 @@
-package august.fileHandling;
+package august.streams;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
-public class CopyCharacters {
+public class CopyBytes {
     public static void main(String[] args) throws IOException {
 
-        FileReader in = null;
-        FileWriter out = null;
+        FileInputStream in = null;
+        FileOutputStream out = null;
 
         try {
-            in  = new FileReader("source.txt");
-            out = new FileWriter("destination.txt");
+            in  = new FileInputStream("xyz.txt");
+            out = new FileOutputStream("abc.txt");
 
-//            System.out.println("Total bytes available: " + in.read());
+            System.out.println("Total bytes available: " + in.available());
 
 
             int c;
@@ -33,4 +36,3 @@ public class CopyCharacters {
         }
     }
 }
-
