@@ -36,6 +36,7 @@ public class CreateDirectory {
 
             String option = input.next();
 
+
             if (option.toUpperCase().charAt(0) == 'N') {
                 createMoreDirectory = false;
                 break;
