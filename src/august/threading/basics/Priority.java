@@ -1,4 +1,4 @@
-package august.threading;
+package august.threading.basics;
 
 class Priorities implements Runnable {
     Thread t;

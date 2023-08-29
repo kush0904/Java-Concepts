@@ -1,4 +1,4 @@
-package august.threading;
+package august.threading.basics;
 
 
 class NewThreading extends Thread{

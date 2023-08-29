@@ -1,4 +1,4 @@
-package august.threading;
+package august.threading.basics;
 
 
 // controlling the main thread
