@@ -2,6 +2,8 @@ package sideProjects.flightTicket;
 
 import java.util.Scanner;
 
+
+//flight
 public class Ticket {
 
     private String ticketNo;
@@ -52,7 +54,10 @@ public class Ticket {
                 throw new IllegalArgumentException("Ticket number must contain only digits.");
             }
 
-            int ticketNumber = Integer.parseInt(ticketNo);
+            if(!startLocation.matches("^[a-zA-Z]*$") || !destination.matches("^[a-zA-Z]*$")){
+                throw new IllegalArgumentException("Locations must not contain any number");
+            }
+
 
             Ticket obj = new Ticket(ticketNo, startLocation, destination);
 
