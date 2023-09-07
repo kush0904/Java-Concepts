@@ -2,8 +2,6 @@ package sideProjects.flightTicket;
 
 import java.util.Scanner;
 
-
-//flight
 public class Ticket {
 
     private String ticketNo;
@@ -37,14 +35,15 @@ public class Ticket {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter ticket number: ");
-        ticketNo = sc.next();
+        ticketNo = sc.nextLine();
 
         System.out.print("Enter start location: ");
-        startLocation = sc.next();
+        startLocation = sc.nextLine();
 
         System.out.print("Enter destination: ");
-        destination = sc.next();
+        destination = sc.nextLine();
 
+        ticketNo = ticketNo.trim();
         try {
             if (ticketNo.isEmpty()) {
                 throw new IllegalArgumentException("Ticket number cannot be empty.");
