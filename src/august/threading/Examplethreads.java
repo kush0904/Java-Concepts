@@ -1,6 +1,6 @@
 package august.threading;
 
-public class threads {
+public class Examplethreads {
 
     public static void main(String[] args) {
         System.out.println("Inside : "+ Thread.currentThread().getName());

@@ -1,6 +1,5 @@
 package august.threading.basics;
 
-
 class NewThreading extends Thread{
     NewThreading(){
         super("Demo Thread");
@@ -20,7 +19,6 @@ class NewThreading extends Thread{
         System.out.println("Exiting child thread");
     }
 }
-
 
 public class ExtendThread {
     public static void main(String[] args) {
